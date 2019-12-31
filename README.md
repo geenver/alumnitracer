@@ -1,2 +1,2 @@
 # alumnitracer
-alumnitracer.git
+git-github
