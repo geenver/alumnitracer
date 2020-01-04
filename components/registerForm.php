@@ -6,7 +6,7 @@
     <div class="form-group">
         <label for="Email"> Email address </label>
         <input type="email" class="form-control" id="email" placeholder="Email Address">
-        <button type="button" class="btn btn-primary mt-5">Submit</button>
+        <button type="button" class="btn btn-primary mt-2">Submit</button>
     </div>
 
 </form>
