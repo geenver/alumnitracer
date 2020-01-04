@@ -1,0 +1,7 @@
+<?php
+$PERSONS_TABLE = "CREATE TABLE persons(
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  alumni_name VARCHAR(30) NOT NULL,
+  alumni_graduate VARCHAR(30) NOT NULL,
+  email_address VARCHAR(70) NOT NULL UNIQUE
+  )";
