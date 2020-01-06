@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('config.php') ?>
+<?php include('../config.php') ?>
 <?php include('../components/header.php') ?>
-<?php
-
-
-?>
 
 <body>
   <div id="particles-js"></div>
   <?php include('../components/navigation/default.php') ?>
   <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-6">
+    <div class="row">
 
-        <?php include("../components/cards/profileCard.php") ?>
+      <?php
+      $search_query = $_GET['search_query'];
+      if ($search_query != '') {
+        $result = $db->query("SELECT * FROM users WHERE fname LIKE '%$search_query%'");
+      } else {
+        $result = $db->query("SELECT * FROM users");
+      }
 
-      </div>
+
+      if (mysqli_num_rows($result) != 0) {
+
+
+        while ($user = mysqli_fetch_array($result, MYSQLI_ASSOC)) { ?>
+          <div class="col-md-4 mb-5 profile-card">
+            <div class="media">
+              <img id="userProfileImg" src="<?php echo $user['image_url'] ?>" class="mr-3" alt="...">
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <h5> <?php echo $user['fname'] ?></h5>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <small>Graduation Date:</small> <br> <?php echo $user['graduation_date'] ?>
+                </li>
+                <li class="list-group-item">
+                  <small>Email Address: </small> <br> <?php echo $user['email_address'] ?>
+                </li>
+                <li class="list-group-item">
+                  <small>Course: </small> <br> <?php echo $user['graduation_course'] ?>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <?php };
+      } else { ?>
+
+        <div class="container">
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+              <div class="card text-center p-5" style="margin-top: 20vh">
+                <div class="card-body">
+                  <blockquote class="blockquote text-center">
+                    <p class="mb-0">
+                      "<?php echo $search_query ?> " did not match any results from the system. Press <a href="./dashboard.php">here</a> to reload the page.
+                    </p>
+                    <footer class="blockquote-footer">
+                      <cite title="Source Title">
+                        <a target="_blank" href="http://slsu.edu.ph/">slsu.edu.ph</a>
+                      </cite>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <?php  } ?>
     </div>
   </div>
   <?php include("../components/footer.php") ?>
 
 </body>
+
+<script>
+  const user = localStorage.getItem('user');
+
+  if (!user) {
+    console.log('Not logged in ')
+    window.location.href = 'http://localhost/alumnitracer'
+  }
+</script>
 
 <!-- Google API -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -43,6 +106,5 @@
 
 <!-- Scripts -->
 <script src="<?php echo $BASE_URL, 'script/particlesConfig.js' ?>"></script>
-
 
 </html>

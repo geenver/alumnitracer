@@ -9,20 +9,9 @@
         </cite>
       </footer>
     </blockquote>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div class="g-signin2" data-onsuccess="onSuccess"></div>
   </div>
 </div>
-
-<script>
-  function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    const googleId = profile.getId()
-    const name = profile.getName()
-    const imageUrl = profile.getImageUrl()
-    const email = profile.getEmail()
-    window.location.href = `http://localhost/alumnitracer/u/new_user.php?googleId=${googleId}&name=${name}&email=${email}&imageUrl=${imageUrl}`
-  }
-</script>
 
 <style>
   .g-signin2 {

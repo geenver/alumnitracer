@@ -29,6 +29,35 @@
 	<!-- Datepicker JS -->
 	<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
 	<!-- Google API Library -->
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://apis.google.com/js/platform.js"></script>
+
+	<script>
+		/**
+		 * Handle successful sign-ins.
+		 */
+		var onSuccess = function(googleUser) {
+			var profile = googleUser.getBasicProfile();
+			const googleId = profile.getId()
+			const name = profile.getName()
+			const imageUrl = profile.getImageUrl()
+			const email = profile.getEmail()
+
+			localStorage.setItem('user', JSON.stringify({
+				googleId,
+				name,
+				imageUrl,
+				email
+			}));
+
+			window.location.href = `http://localhost/alumnitracer/u/new_user.php?googleId=${googleId}&name=${name}&email=${email}&imageUrl=${imageUrl}`
+		};
+
+		/**
+		 * Handle sign-in failures.
+		 */
+		var onFailure = function(error) {
+			console.log(error);
+		};
+	</script>
 
 </head>

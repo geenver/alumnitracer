@@ -4,11 +4,13 @@
 
 <body>
   <div id="particles-js"></div>
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-6">
-      <?php include('../components/cards/errorCard.php') ?>
+  <div class="container">
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+        <?php include('../components/cards/errorCard.php') ?>
+      </div>
     </div>
-  </div>
   </div>
   <?php include("../components/footer.php") ?>
 

@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once '../config.php';
 
 $POST = file_get_contents("php://input");
 parse_str($POST, $DATA);
