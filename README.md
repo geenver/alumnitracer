@@ -1,2 +1,2 @@
-# alumnitracer
-git-github
+# Souther Luzon State University Alumni Tracer
+git-githu
