@@ -1,7 +1,6 @@
 <?php
 
-$db = mysqli_connect("localhost", "root", "password", "alumnitracer");
-
+require_once 'config.php';
 
 $CREATE_USERS_TABLE = "CREATE TABLE IF NOT EXISTS `users` (
   `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,

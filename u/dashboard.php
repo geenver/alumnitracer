@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include('config.php') ?>
 <?php include('../components/header.php') ?>
+<?php
+
+
+?>
 
 <body>
   <div id="particles-js"></div>
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-6">
+  <?php include('../components/navigation/default.php') ?>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
 
-      <h1>Dashboard PHP</h1>
+        <?php include("../components/cards/profileCard.php") ?>
+
+      </div>
     </div>
-  </div>
   </div>
   <?php include("../components/footer.php") ?>
 

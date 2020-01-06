@@ -1,6 +1,5 @@
 <?php
-$db = mysqli_connect("localhost", "root", "password", "alumnitracer");
-
+require_once 'config.php';
 
 $POST = file_get_contents("php://input");
 parse_str($POST, $DATA);

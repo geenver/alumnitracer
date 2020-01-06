@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect("localhost", "root", "password", "alumnitracer");
+
 $EMAIL = $_GET['email'];
 $sql = "SELECT * FROM `users`";
 
