@@ -17,8 +17,9 @@ $sql = "INSERT INTO `users`(`id`, `fname`, `email_address`, `graduation_date`, `
 
 // Perform a query, check for error;
 if (mysqli_query($db, $sql)) {
-  header("Location: http://localhost/alumnitracer/u/dashboard.php");
+  header("Location: http://localhost/alumnitracer/u/admin.php");
 } else {
+
   header("Location: http://localhost/alumnitracer/u/error.php");
 };
 
