@@ -2,6 +2,8 @@
 <html lang="en">
 <?php include('config.php') ?>
 <?php include('components/header.php') ?>
+<?php include('components/about.php') ?>
+
 
 <body>
   <div id="particles-js"></div>
