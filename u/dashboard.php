@@ -10,7 +10,7 @@
     <div class="row">
 
       <?php
-      $search_query = $_GET['search_query'];
+      $search_query = $_GET['search_query'] ?? '';
       if ($search_query != '') {
         $result = $db->query("SELECT * FROM users WHERE fname LIKE '%$search_query%'");
       } else {
