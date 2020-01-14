@@ -3,36 +3,32 @@
     <div class="row row-30">
       <div class="col-md-4 col-xl-5">
         <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-          <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+          <p>SLSU is mandated to provide advanced education, professional, technological instruction in the fields of allied medicine, education, engineering, agriculture, fisheries, forestry, environment, arts and sciences, accountancy, cooperative, business and entrepreneurship, technology and other relevant fields of study in the Province of Quezon and in Region IV-A CALABARZON. It is also mandated to undertake research and extension services and provide progressive leadership in its areas of specialization.[3] By virtue of Republic Act 10931 or the Universal Access to Quality Tertiary Education Act signed by President Rodrigo Duterte, SLSU will no longer be collecting tuition fees from its local, first degree undergraduate students.[</p>
           <!-- Rights-->
-          <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+          <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>BSIT</span><span>. </span><span>CIT.</span></p>
         </div>
       </div>
       <div class="col-md-4">
         <h5>Contacts</h5>
         <dl class="contact-list">
           <dt>Address:</dt>
-          <dd>798 South Park Avenue, Jaipur, Raj</dd>
+          <dd>4328 Avenue Quezon Avenue Brgy. Kulapi, Lucban, Quezon </dd>
         </dl>
         <dl class="contact-list">
           <dt>email:</dt>
-          <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+          <dd><a href="mailto:#">slsucit@gmail.com</a></dd>
         </dl>
         <dl class="contact-list">
-          <dt>phones:</dt>
-          <dd><a href="tel:#">https://karosearch.com</a> <span>or</span> <a href="tel:#">https://karosearch.com</a>
-          </dd>
-        </dl>
-      </div>
-      <div class="col-md-4 col-xl-3">
-        <h5>Links</h5>
-        <ul class="nav-list">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacts</a></li>
-          <li><a href="#">Pricing</a></li>
-        </ul>
+          <dt>WEB PAGE:</dt>
+          <dd><a href="tel:#">https://www.slsu.edu.ph</a> <span>&reg;</span> <a href="tel:#" Contact Number : 540-4087, 540-3775, 911-1917, 911-1275. </a> </dd> </dl> </div> <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="http://localhost/alumnitracer/components/about.php">About Us</a></li>
+                <li><a href="#">Activitiess</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Gallery</a></li>
+              </ul>
       </div>
     </div>
   </div>
